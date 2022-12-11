@@ -36,7 +36,7 @@ read -p "Introduce Nombre usuario Nuevo: " user
 echo ""
 read -p "Introduce la clave de $user: " userpasswd
 echo ""
-read -p "Introduce la clave de root" rootpasswd
+read -p "Introduce la clave de root: " rootpasswd
 echo ""
 
 # Escritorios
