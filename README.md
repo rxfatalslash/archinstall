@@ -8,7 +8,7 @@ Primero se inicia el sistema desde la imagen ISO de Arch Linux y una vez se entr
 loadkeys es
 pacman -Sy git --noconfirm
 ```
-### Clonado de repositorio
+## Clonado de repositorio
 ```
 git clone https://github.com/rxfatalslash/archinstall
 cd archinstall/
