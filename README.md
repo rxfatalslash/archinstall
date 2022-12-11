@@ -11,5 +11,5 @@ Clonamos el repositorio, entramos en el y ejecutamos el instalador. Aquí empeza
 ```
 git clone https://github.com/rxfatalslash/archinstall
 cd archinstall/
-./archinstall.sh
+sh archinstall.sh
 ```
