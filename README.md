@@ -1,5 +1,3 @@
-# archinstall
-
 Este es un script automatizado para la instalación de Arch Linux, existen una amplia gama de opciones a elegir en la instalación del sistema
 
 # Instalación
