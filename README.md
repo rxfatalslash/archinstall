@@ -9,7 +9,7 @@ pacman -Sy archlinux-keyring --noconfirm
 pacman -Sy git --noconfirm
 ```
 ## Clonado de repositorio
-Clonamos el repositorio, entramos en el y ejecutamos el instalador. Aquí empezará todo el proceso de instalación del sistema Arch Linux
+Clonamos el repositorio, entramos en él y ejecutamos el instalador. Aquí empezará todo el proceso de instalación del sistema Arch Linux
 ```
 git clone https://github.com/rxfatalslash/archinstall
 cd archinstall/
