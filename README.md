@@ -1,25 +1,25 @@
-Este es un script automatizado para la instalación de Arch Linux, existe una amplia gama de opciones a elegir en la instalación del sistema
+This is an automated script for the installation of Arch Linux, and there is a wide range of options to choose from during the system installation.
 
-# Instalación
-Primero se inicia el sistema desde la imagen ISO de Arch Linux y una vez se entre en el sistema se debe cargar la configuración de teclado correspondiente a nuestra zona con el comando **loadkeys _zona_**, después instalamos git para poder clonar el repositorio
+# Installation
+First, the system is booted from the Arch Linux ISO image, and once inside the system, you should load the keyboard configuration corresponding to your region with the command **loadkeys _zone_**. Then, install git to be able to clone the repository
 ```
 loadkeys es
 pacman -Syy
 pacman -Sy archlinux-keyring --noconfirm
 ```
-Si obtienes un error PGP signature ejecuta los siguientes comandos
+If you encounter a PGP signature error, execute the following commands
 ```
 pacman-key --init
 pacman-key --populate archlinux
 ```
-Si el problema persiste, reinicia el sistema y vuelve a intentar instalar los paquetes necesarios
+If the problem persists, restart the system and try again to install the necessary packages.
 <br><br>
-Instala git
+Install git
 ```
 pacman -Sy git --noconfirm
 ```
-## Clonado de repositorio
-Clonamos el repositorio, entramos en él y ejecutamos el instalador. Aquí empezará todo el proceso de instalación del sistema Arch Linux
+## Repository Cloning
+Clone the repository, enter it, and run the installer. This is where the entire Arch Linux system installation process will begin
 ```
 git clone https://github.com/rxfatalslash/archinstall
 cd archinstall/
