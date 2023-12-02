@@ -324,9 +324,11 @@ while true; do
     echo ""
     printf "%s%s3. Gnome%s" "${BLD}" "${CBL}" "${CNC}"
     echo ""
+    printf "%s%s3. i3WM%s" "${BLD}" "${CBL}" "${CNC}"
+    echo ""
     printf "%s%s------------------------------------%s" "${BLD}" "${CBL}" "${CNC}"
     echo ""
-    read -e -p "${BLD}${CBL}Elije una opción de escritorio [1-3]:${CNC} " escritorio
+    read -e -p "${BLD}${CBL}Elije una opción de escritorio [1-4]:${CNC} " escritorio
     clear
 
     case $escritorio in
@@ -381,6 +383,11 @@ while true; do
             arch-chroot /mnt /bin/bash -c "systemctl enable gdm"
             break
         ;;
+        4)
+            clear
+            logo "Instalando i3..."
+            arch-chroot /mnt /bin/bash -c "sudo pacman -Syy i3-wm i3status i3lock dmenu termite dunst nitrogen"
+            arch-chroot /mnt /bin/bash -c "echo 'exec i3' >> ~/.xinitrc"
         *) printf "%s%sError: Escribe un número 1-3%s\n\n" "${BLD}" "${CRE}" "${CNC}";;
     esac
 done
@@ -450,7 +457,7 @@ while true; do
     case $chroot in
         [Ss]*) arch-chroot /mnt;;
         [Nn]*) break;;
-        *) printf "%s%sError: Escribe solo 's' o 'n'%s" "${BLD}" "${CRE}" "${CNC}";;
+        *) printf "\n%s%sError: Escribe solo 's' o 'n'%s" "${BLD}" "${CRE}" "${CNC}";;
     esac
 done
 
