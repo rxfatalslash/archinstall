@@ -356,7 +356,7 @@ while true; do
             echo -e 'Section "InputClass"' > /mnt/etc/X11/xorg.conf.d/00-keyboard.conf
             echo -e 'Identifier "system-keyboard"' >> /mnt/etc/X11/xorg.conf.d/00-keyboard.conf
             echo -e 'MatchIsKeyboard "on"' >> /mnt/etc/X11/xorg.conf.d/00-keyboard.conf
-            echo -e 'Option "XkbLayout" "latam"' >> /mnt/etc/X11/xorg.conf.d/00-keyboard.conf
+            echo -e 'Option "XkbLayout" "es"' >> /mnt/etc/X11/xorg.conf.d/00-keyboard.conf
             echo -e 'EndSection' >> /mnt/etc/X11/xorg.conf.d/00-keyboard.conf
             echo ""
             cat /mnt/etc/X11/xorg.conf.d/00-keyboard.conf
