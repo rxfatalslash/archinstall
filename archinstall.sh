@@ -388,6 +388,7 @@ while true; do
             logo "Instalando i3..."
             arch-chroot /mnt /bin/bash -c "sudo pacman -Syy i3-wm i3status i3lock dmenu termite dunst nitrogen"
             arch-chroot /mnt /bin/bash -c "echo 'exec i3' >> ~/.xinitrc"
+        ;;
         *) printf "%s%sError: Escribe un número 1-3%s\n\n" "${BLD}" "${CRE}" "${CNC}";;
     esac
 done
